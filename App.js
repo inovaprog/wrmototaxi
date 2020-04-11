@@ -166,7 +166,7 @@ export default class App extends React.Component {
                     style={{ width: 50, height: 50 }} />
                 </View>
 
-                <Callout style={{ width: 290, borderRadius: 20, }} onPress={() => { Linking.openURL(`http://api.whatsapp.com/send?1=pt_BR&phone=55${marker.telefone}`) }}>
+                <Callout style={{ width: 290, borderRadius: 20, }} onPress={() => { Linking.openURL(`http://api.whatsapp.com/send?1=pt_BR&phone=55${marker.whatsapp}`) }}>
                   <View>
                     <WebView source={{ uri: 'https://wrmototaxi.s3-sa-east-1.amazonaws.com/' + marker.fotos }} style={{ height: 250 }} scalesPageToFit />
                     <Text style={styles.titulo} numberOfLines={1} >{marker.title}</Text>
